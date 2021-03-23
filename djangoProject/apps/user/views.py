@@ -1,6 +1,9 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
+from django.utils.decorators import method_decorator
+
 from apps.user.models import Usuarios
 
 
@@ -19,6 +22,7 @@ class LoginFormView(LoginView):
 
 
 def lista(request):
+
     data = {
         'name': 'Hola',
         'usuarios': Usuarios.objects.all()

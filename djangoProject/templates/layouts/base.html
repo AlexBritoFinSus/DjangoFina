@@ -15,12 +15,14 @@
         <!-- CSS INCLUDE -->
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <!-- EOF CSS INCLUDE -->
-        {% block head %}
+        {% block css %}
 
         {% endblock %}
     </head>
     <body>
+    {% block stickyBar %}
 
+    {% endblock %}
         <!-- APP WRAPPER -->
         <div class="app">
 
@@ -31,6 +33,8 @@
                 <!-- START APP CONTENT -->
                 <div class="app-content app-sidebar-left">
                     {% include 'includes/head.html' %}
+                    {% block lheading %}
+                    {% endblock %}
 
                     <!-- START PAGE CONTAINER -->
                     <div class="container">

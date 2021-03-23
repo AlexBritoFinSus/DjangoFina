@@ -21063,7 +21063,7 @@ body .row > div[class^='col-'] {
   transition: background 100ms linear;
 }
 .app .app-header .app-header-logo.app-header-logo-light {
-  background: url(../img/logo-dark.png) left top no-repeat;
+  background: url(../img/logo.png) left top no-repeat;
 }
 .app .app-header .app-header-logo.app-header-logo-condensed {
   width: 120px;
@@ -21320,7 +21320,7 @@ body .row > div[class^='col-'] {
 }
 .app .app-header.app-header-design-default .app-header-logo {
   background-color: #272c40;
-  background-image: url(../img/logo-dark.png);
+  background-image: url(../img/logo.png);
 }
 .app .app-header.app-header-design-default .app-header-logo:hover {
   background-color: #252a3c;
@@ -21492,7 +21492,7 @@ body .row > div[class^='col-'] {
 }
 .app .app-header.app-header-design-lightblue .app-header-logo {
   background-color: #f0f4f8;
-  background-image: url(../img/logo-dark.png);
+  background-image: url(../img/logo.png);
 }
 .app .app-header.app-header-design-lightblue .app-header-logo:hover {
   background-color: #edf1f6;
@@ -21761,7 +21761,7 @@ body .row > div[class^='col-'] {
     background: url(../img/logo.png) left top no-repeat;
   }
   .app .app-header .app-header-logo.app-header-logo-light {
-    background: url(../img/logo-dark-sm.png) left top no-repeat;
+    background: url(../img/logo.png) left top no-repeat;
   }
   .app .app-header .container.container-boxed {
     padding-left: 0px;
@@ -22152,16 +22152,20 @@ body .row > div[class^='col-'] {
 }
 .app-navigation.app-navigation-style-default .app-navigation-logo {
   background: url(../img/logo.png) left top no-repeat #272c40;
+  background-size: contain;
 }
 .app-navigation.app-navigation-style-default .app-navigation-logo .app-navigation-logo-button {
   background: #252a3c;
   color: #C5D1CD;
+  background-size: contain;
 }
 .app-navigation.app-navigation-style-default .app-navigation-logo .app-navigation-logo-button:hover {
   background: #232839;
+  background-size: contain;
 }
 .app-navigation.app-navigation-style-default .app-navigation-logo:hover {
   background: url(../img/logo.png) left top no-repeat #212636;
+  background-size: contain;
 }
 .app-navigation.app-navigation-style-default nav > ul > li.openable > a:after {
   color: #55698A;
@@ -22216,7 +22220,7 @@ body .row > div[class^='col-'] {
   text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
 }
 .app-navigation.app-navigation-style-default.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-sm.png);
+  background-image: url(../img/logo.png);
 }
 .app-navigation.app-navigation-style-default.app-navigation-minimized nav > ul > li > a > span {
   color: #C5D1CD;
@@ -22225,7 +22229,7 @@ body .row > div[class^='col-'] {
   background: #FFF;
 }
 .app-navigation.app-navigation-style-light .app-navigation-logo {
-  background: url(../img/logo-dark.png) left top no-repeat #FFF;
+  background: url(../img/logo.png) left top no-repeat #FFF;
 }
 .app-navigation.app-navigation-style-light .app-navigation-logo .app-navigation-logo-button {
   background: #f5f5f5;
@@ -22235,7 +22239,7 @@ body .row > div[class^='col-'] {
   background: #f2f2f2;
 }
 .app-navigation.app-navigation-style-light .app-navigation-logo:hover {
-  background: url(../img/logo-dark.png) left top no-repeat #F5F5F5;
+  background: url(../img/logo.png) left top no-repeat #F5F5F5;
 }
 .app-navigation.app-navigation-style-light nav > ul > li.openable > a:after {
   color: #7F8FA4;
@@ -22290,7 +22294,7 @@ body .row > div[class^='col-'] {
   text-shadow: none;
 }
 .app-navigation.app-navigation-style-light.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-dark-sm.png);
+  background-image: url(../img/logo.pngpng);
 }
 .app-navigation.app-navigation-style-light.app-navigation-minimized nav > ul > li > a > span {
   color: #333;
@@ -22305,7 +22309,7 @@ body .row > div[class^='col-'] {
   background: #f7f9fb;
 }
 .app-navigation.app-navigation-style-lightblue .app-navigation-logo {
-  background: url(../img/logo-dark.png) left top no-repeat #f0f4f8;
+  background: url(../img/logo.png) left top no-repeat #f0f4f8;
 }
 .app-navigation.app-navigation-style-lightblue .app-navigation-logo .app-navigation-logo-button {
   background: #eaf0f6;
@@ -22315,7 +22319,7 @@ body .row > div[class^='col-'] {
   background: #e6edf4;
 }
 .app-navigation.app-navigation-style-lightblue .app-navigation-logo:hover {
-  background: url(../img/logo-dark.png) left top no-repeat #edf1f6;
+  background: url(../img/logo.png) left top no-repeat #edf1f6;
 }
 .app-navigation.app-navigation-style-lightblue nav > ul > li.openable > a:after {
   color: #659bff;
@@ -22370,7 +22374,7 @@ body .row > div[class^='col-'] {
   text-shadow: none;
 }
 .app-navigation.app-navigation-style-lightblue.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-dark-sm.png);
+  background-image: url(../img/logo.pngpng);
 }
 .app-navigation.app-navigation-style-lightblue.app-navigation-minimized nav > ul > li > a > span {
   color: #496787;
@@ -22385,7 +22389,7 @@ body .row > div[class^='col-'] {
   background: #3b3048;
 }
 .app-navigation.app-navigation-style-purple .app-navigation-logo {
-  background: url(../img/logo-dark.png) left top no-repeat #f7c36e;
+  background: url(../img/logo.png) left top no-repeat #f7c36e;
 }
 .app-navigation.app-navigation-style-purple .app-navigation-logo .app-navigation-logo-button {
   background: #3a3047;
@@ -22395,7 +22399,7 @@ body .row > div[class^='col-'] {
   background: #382e44;
 }
 .app-navigation.app-navigation-style-purple .app-navigation-logo:hover {
-  background: url(../img/logo-dark.png) left top no-repeat #f6bf64;
+  background: url(../img/logo.png) left top no-repeat #f6bf64;
 }
 .app-navigation.app-navigation-style-purple nav > ul > li.openable > a:after {
   color: #f8c36e;
@@ -22450,7 +22454,7 @@ body .row > div[class^='col-'] {
   text-shadow: none;
 }
 .app-navigation.app-navigation-style-purple.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-dark-sm.png);
+  background-image: url(../img/logo.png);
 }
 .app-navigation.app-navigation-style-purple.app-navigation-minimized nav > ul > li > a > span {
   color: #edeef4;
@@ -22533,7 +22537,7 @@ body .row > div[class^='col-'] {
   text-shadow: none;
 }
 .app-navigation.app-navigation-style-blue.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-sm.png);
+  background-image: url(../img/logo.png);
 }
 .app-navigation.app-navigation-style-blue.app-navigation-minimized nav > ul > li > a > span {
   color: #fbfcfd;
@@ -22762,7 +22766,7 @@ body .row > div[class^='col-'] {
   width: 30px;
 }
 .app-navigation.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-sm.png);
+  background-image: url(../img/logo.png);
 }
 .app-navigation.app-navigation-minimized .app-navigation-logo .app-navigation-logo-button {
   display: none;
@@ -31179,7 +31183,7 @@ input[type="file"] {
   /* END BREADCRUMB */
 }
 .app.app-rtl .app-navigation .app-navigation-logo {
-  background: url(../img/logo-rtl.png) right top no-repeat #272c40;
+  background: url(../img/logo.png) right top no-repeat #272c40;
 }
 .app.app-rtl .app-navigation nav ul > li.openable > a:after {
   content: "\e874";
@@ -31214,7 +31218,7 @@ input[type="file"] {
   padding: 20px 15px 10px 0px;
 }
 .app.app-rtl .app-navigation.app-navigation-minimized .app-navigation-logo {
-  background-image: url(../img/logo-sm.png);
+  background-image: url(../img/logo.png);
 }
 .app.app-rtl .app-navigation.app-navigation-minimized nav > ul > li > a {
   padding: 10px !important;

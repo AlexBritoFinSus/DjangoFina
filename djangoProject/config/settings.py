@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'djangoFi.apps.DjangofiConfig',
     'apps.user',
+    'apps.cobranza.creditos',
+    'apps.cobranza.dashboards',
 ]
 
 MIDDLEWARE = [
@@ -149,3 +151,4 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_REDIRECT_URL = 'prueba'
+LOGIN_URL = 'login'
