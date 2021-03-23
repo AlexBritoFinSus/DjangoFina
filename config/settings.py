@@ -25,7 +25,7 @@ SECRET_KEY = '@=z%mt7x724=c50(xtz*55d&7+7pkl!d_=*7l$%^+w+1pyq648'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fina-cobranza.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
