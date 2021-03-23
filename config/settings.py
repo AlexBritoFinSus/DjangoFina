@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from os import path
 from pathlib import Path
+import mimetypes
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -154,5 +155,6 @@ STATICFILES_DIRS = [
 ]
 
 SITE_ROOT = os.path.dirname(__file__)
-LOGIN_REDIRECT_URL = 'prueba'
+LOGIN_REDIRECT_URL = 'dashboardManager'
 LOGIN_URL = 'login'
+mimetypes.add_type("text/css", ".css", True)
