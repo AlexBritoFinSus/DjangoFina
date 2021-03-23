@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+from os import path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = '@=z%mt7x724=c50(xtz*55d&7+7pkl!d_=*7l$%^+w+1pyq648'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -144,13 +146,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-
+PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
+STATIC_ROOT = path.join(PROJECT_ROOT, 'static').replace('\\','/')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\', '/')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '/static'),
 ]
 
-
+SITE_ROOT = os.path.dirname(__file__)
 LOGIN_REDIRECT_URL = 'prueba'
 LOGIN_URL = 'login'
