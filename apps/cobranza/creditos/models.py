@@ -45,7 +45,7 @@ class Creditos(models.Model):
 
 class Gestores(models.Model):
     idusuario = models.CharField(max_length=60, blank=True, null=True)
-    credito = models.CharField(max_length=60, blank=True, null=True)
+    credito = models.CharField(max_length=60, blank=True, null=True, primary_key=False)
     cliente = models.CharField(max_length=60, blank=True, null=True)
     empresa = models.CharField(max_length=10, blank=True, null=True)
     fecha = models.DateField()
@@ -53,3 +53,15 @@ class Gestores(models.Model):
     class Meta:
         managed = False
         db_table = 'gestores'
+
+    def _check_primary_key(self):
+        if self.primary_key:
+            return [
+                checks.Error(
+                    "AutoFieldNonPrimary must not set primary_key=True. bla bla bla",
+                    obj=self,
+                    id="fields.E100",
+                )
+            ]
+        else:
+            return []

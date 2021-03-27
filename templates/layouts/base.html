@@ -1,4 +1,4 @@
-{% load static %}
+{% load stataticfiles %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -33,14 +33,13 @@
                 <!-- START APP CONTENT -->
                 <div class="app-content app-sidebar-left">
                     {% include 'includes/head.html' %}
+                    
                     {% block lheading %}
                     {% endblock %}
 
                     <!-- START PAGE CONTAINER -->
                     <div class="container">
-
                         {% block content %}
-
                         {% endblock %}
                     </div>
                     <!-- END PAGE CONTAINER -->
@@ -54,7 +53,7 @@
             {% include 'includes/footer.html' %}
 
             <!-- START APP SIDEPANEL -->
-            <div class="app-sidepanel scroll" data-overlay="show">
+            <!--<div class="app-sidepanel scroll" data-overlay="show">
                 <div class="container">
 
                     <div class="app-heading app-heading-condensed app-heading-small padding-left-0">
@@ -208,7 +207,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div>-->
             <!-- END APP SIDEPANEL -->
 
             <!-- APP OVERLAY -->
