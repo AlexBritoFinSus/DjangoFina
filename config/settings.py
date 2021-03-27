@@ -9,14 +9,11 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import os.path
-from os import path
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-SITE_ROOT = BASE_DIR
 
 
 # Quick-start development settings - unsuitable for production
@@ -60,7 +57,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SITE_ROOT, "templates")],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -150,12 +147,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-
+   BASE_DIR /  'static',
+    '/var/www/static/',
 ]
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'
 LOGIN_URL = 'login'
 
-SITE_ROOT = os.path.dirname(__file__)
-PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
