@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@=z%mt7x724=c50(xtz*55d&7+7pkl!d_=*7l$%^+w+1pyq648'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -148,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    BASE_DIR /  'static',
-    '/var/www/static/',
+    '/site/wwwroot/static',
 ]
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'

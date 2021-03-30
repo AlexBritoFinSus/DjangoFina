@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="intval text-left">39 / 1,589</div>
                                 <div class="line">
-                                    <div class="subtitle"><a href="#">Open all messages</a></div>
+                                    <div class="subtitle"><a href="https://www.google.com">Open all messages</a></div>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +369,7 @@
                 <div class="block-content">
                     <div class="app-chart-wrapper app-chart-with-axis">
                         <div id="yaxis" class="app-chart-yaxis"></div>
-                        <div class="app-chart-holder" id="dashboard-chart-line" style="height: 325px;"></div>
+                        <div class="app-chart-holder" id="dashboard-chart-line" style="height: 425px;"></div>
                         <div id="xaxis" class="app-chart-xaxis"></div>
                     </div>
                 </div>
@@ -390,8 +390,8 @@
                         <button class="btn btn-default btn-icon-fixed"><span class="icon-file-add"></span> % Rutas</button>
                     </div>
                 </div>
-                <div class="block-content">
-                    <div class="table-responsive">
+                <div class="block-content" style="height: 446px !important; ">
+                    <div class="table-responsive" >
                         <table class="table table-clean-paddings margin-bottom-0">
                             <thead>
                                 <tr>
@@ -407,7 +407,7 @@
                                         <td>
                                             <div class="contact contact-rounded contact-lg padding-left-0">
                                                 <div class="contact-container">
-                                                    <a href="{% url 'creditos:credit_detail' credit.empresa+'-'+credit-credito %}">{{ credit.credito }}</a>
+                                                    <a href="{% url 'creditos:credit_detail' credit.empresa credit.credito %}">{{ credit.credito }}</a>
                                                     <span>{{ credit.cliente }}</span>
                                                 </div>
                                             </div>

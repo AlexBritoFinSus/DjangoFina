@@ -5,7 +5,7 @@ from apps.cobranza.creditos.models import Gestores
 
 @login_required
 def dashboard_manager(request):
-    credits = Gestores.objects.get(idusuario = 'aandrade')
+    credits = Gestores.objects.filter(idusuario = 'aperez')
 
     context = {
         'credits': credits,

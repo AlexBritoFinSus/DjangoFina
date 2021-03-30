@@ -29,9 +29,9 @@ class CreditDetail(LoginRequiredMixin, TemplateView):
 
 
 @login_required
-def credit_detail(request, credit_slug):
+def credit_detail(request, empresa, credito):
     credit = Creditos.objects.raw('select * from creditos '
-                                  'inner join info_cliente on creditos.cliente = info_cliente.cliente and creditos.empresa = info_cliente.empresa WHERE clave = %s', [credit_slug])[:1]
+                                  'inner join info_cliente on creditos.cliente = info_cliente.cliente and creditos.empresa = info_cliente.empresa WHERE creditos.empresa = %s and creditos.credito = %s', [empresa, credito])[:1]
     context = {
         'credit': credit[0],
         'title': 'Detalle credito',
