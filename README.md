@@ -1,1 +1,0 @@
-# DjangoFina
