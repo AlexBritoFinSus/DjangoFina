@@ -16,10 +16,12 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path, include
 from apps.user.views import LoginFormView, lista
+from django.conf import settings
 
 urlpatterns = [
-    #    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('', LoginFormView.as_view(), name='login'),
     path('creditos/', include('apps.cobranza.creditos.urls')),
     path('dashboards/', include('apps.cobranza.dashboards.urls')),
 ]
+
