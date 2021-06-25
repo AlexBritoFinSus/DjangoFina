@@ -26,7 +26,6 @@ jobs:
       run: |
         python -m venv venv
         source venv/bin/activate
-        python manage.py collectstatic
 
     - name: Install dependencies
       run: pip install -r requirements.txt
@@ -45,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'development'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -59,5 +58,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'finsusDocs'
-          slot-name: 'production'
+          slot-name: 'development'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_3bde0229059143d69cca0ba92c696f2a }}

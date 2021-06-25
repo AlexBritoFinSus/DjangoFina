@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@=z%mt7x724=c50(xtz*55d&7+7pkl!d_=*7l$%^+w+1pyq648'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://finacobranza.azurewebsites.net/']
 
@@ -152,13 +152,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL = '/statics/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    '/site/wwwroot/static',
+    BASE_DIR / 'statics',
+    '/site/wwwroot/statics',
 ]
-STATIC_ROOT = "/site/wwwroot/static/"
+STATIC_ROOT = "/site/wwwroot/statics/"
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'
 LOGIN_URL = 'login'
