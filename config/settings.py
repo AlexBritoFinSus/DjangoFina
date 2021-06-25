@@ -158,7 +158,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'statics',
     '/site/wwwroot/statics',
 ]
-STATIC_ROOT = "/site/wwwroot/statics/"
+# STATIC_ROOT = "/site/wwwroot/statics/"
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'
 LOGIN_URL = 'login'
