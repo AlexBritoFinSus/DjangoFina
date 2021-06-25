@@ -152,13 +152,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
-STATIC_URL = '/statics/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'statics',
-    '/site/wwwroot/statics',
+    BASE_DIR / 'static',
+    '/site/wwwroot/static',
 ]
-STATIC_ROOT = "/site/wwwroot/statics/"
+STATIC_ROOT = "/site/wwwroot/static/"
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'
 LOGIN_URL = 'login'
