@@ -154,7 +154,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT ='/site/wwwroot/staticfiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    '/site/wwwroot/static',
+]
+STATIC_ROOT = "/site/wwwroot/static/"
 
 LOGIN_REDIRECT_URL = 'dashboards/manager'
 LOGIN_URL = 'login'
